@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { grato } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "MRNET",
+  title: "mrnet — интернет для бизнеса",
   description: "Надёжный и быстрый интернет для бизнеса по всей России",
 };
 

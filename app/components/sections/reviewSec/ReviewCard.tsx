@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ReviewItem } from "./dataReview";
 
 const DEFAULT_HEIGHT = 360;
-const CLAMP_LINES = 9;
+const CLAMP_LINES = 10;
 const LINE_HEIGHT = 22.2;
 const MAX_LINES = 11;
 const MAX_TEXT_HEIGHT = LINE_HEIGHT * MAX_LINES;
@@ -75,10 +75,11 @@ export function ReviewCard({
 
           <div
             ref={textRef}
-            className={`text-[18px] leading-[22.2px] transition-[max-height] duration-500 ease-in-out overflow-hidden ${
-              !isOpen ? `line-clamp-${CLAMP_LINES + 1}` : ""
-            }`}
-            style={{ paddingBottom: isOpen ? "24px" : "0px" }}
+            className={`text-[18px] leading-[22.2px] transition-[max-height] duration-500 ease-in-out overflow-hidden`}
+            style={{
+              maxHeight: isOpen ? "none" : `${LINE_HEIGHT * CLAMP_LINES}px`,
+              paddingBottom: isOpen ? "24px" : "0px",
+            }}
           >
             {item.text}
           </div>
