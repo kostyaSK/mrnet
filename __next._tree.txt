@@ -1,0 +1,6 @@
+:HL["/_next/static/chunks/66e73c91876c43a1.css","style"]
+:HL["/_next/static/media/grato_grotesk_demo_bold-s.p.40c81bc0.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/grato_grotesk_demo_light-s.p.b2c45542.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/grato_grotesk_demo_medium-s.p.24b34dbe.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/grato_grotesk_demo_regular-s.p.79a16bae.otf","font",{"crossOrigin":"","type":"font/otf"}]
+0:{"buildId":"D2TU4fAQzvu9tTRd819JR","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
