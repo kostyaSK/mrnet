@@ -102,7 +102,7 @@ export default function Advantages() {
             </div>
           </div>
           <div className="mt-[34px] flex justify-center">
-            <ButtonGradient href="#start">Начать!</ButtonGradient>
+            <ButtonGradient>Начать!</ButtonGradient>
           </div>
         </div>
       </div>
