@@ -76,7 +76,7 @@ export default function Clients() {
         <div className="overflow-hidden w-full">
           <div
             ref={trackRef}
-            className="flex gap-[13px] md:gap-5"
+            className="flex gap-[13px] md:gap-5 select-none"
             style={{
               transform: `translateX(${currentX}px)`,
               transition: isDragging ? "none" : "transform 0.3s ease",
@@ -92,6 +92,7 @@ export default function Clients() {
                   src={item.src}
                   alt={`Sponsor ${idx + 1}`}
                   fill
+                  draggable={false}
                   className="object-contain scale-100"
                 />
               </div>
