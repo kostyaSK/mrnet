@@ -10,7 +10,7 @@ const sponsors = [
   { src: "/images/clients/pokupochka.png", w: 157, h: 45 },
   { src: "/images/clients/ortk.png", w: 94, h: 94 },
   { src: "/images/clients/alenka.png", w: 129, h: 50 },
-  { src: "/images/clients/rediar.png", w: 166, h: 42 },
+  { src: "/images/clients/redyar.png", w: 166, h: 42 },
 ];
 
 export default function Clients() {
@@ -57,7 +57,7 @@ export default function Clients() {
 
   return (
     <section className="pt-[75px]">
-      <h1 className="text-[24px] sm:text-[32px] leading-[32px] sm:leading-[39px] tracking-[0.05em] uppercase mb-[63px]">
+      <h1 className="text-[24px] sm:text-[32px] leading-[32px] sm:leading-[39px] tracking-[0.05em] uppercase mb-6 md:mb-[63px]">
         500+ клиентов
         <br className="sm:hidden" />
         уже с нами
@@ -76,7 +76,7 @@ export default function Clients() {
         <div className="overflow-hidden w-full">
           <div
             ref={trackRef}
-            className="flex gap-[13px] md:gap-5 pr-[calc(env(safe-area-inset-right)+20px)]"
+            className="flex gap-[13px] md:gap-5"
             style={{
               transform: `translateX(${currentX}px)`,
               transition: isDragging ? "none" : "transform 0.3s ease",
@@ -85,15 +85,14 @@ export default function Clients() {
             {sponsors.map((item, idx) => (
               <div
                 key={idx}
-                className="w-[140px] md:w-[220px] h-[51px] md:h-[80px]
+                className="relative w-[140px] md:w-[220px] h-[51px] md:h-[80px]
               flex flex-shrink-0 items-center justify-center rounded-lg"
               >
                 <Image
                   src={item.src}
                   alt={`Sponsor ${idx + 1}`}
-                  width={item.w}
-                  height={item.h}
-                  className="object-contain select-none pointer-events-none"
+                  fill
+                  className="object-contain scale-100"
                 />
               </div>
             ))}
