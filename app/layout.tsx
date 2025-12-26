@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" className={grato.className}>
-      <body className="html bg-black px-9 pt-9">{children}</body>
+      <body className="html bg-black px-[20px] pt-[30px] md:px-9 md:pt-9">
+        {children}
+      </body>
     </html>
   );
 }

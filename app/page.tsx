@@ -17,15 +17,14 @@ export default function Page() {
       <main>
         <MainSection />
         <Clients />
-        <Technology />
+        {/* <Technology />
         <Slogan />
         <PersonalCab />
         <Advantages />
         <Review />
         <Map />
-        <Registration />
+        <Registration />*/}
       </main>
-      <Footer />
     </>
   );
 }

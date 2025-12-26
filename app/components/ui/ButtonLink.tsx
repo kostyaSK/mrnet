@@ -15,7 +15,7 @@ export default function ButtonLink({
   return (
     <Link
       href={href}
-      className={`w-[334px] h-9 flex items-center justify-center
+      className={`w-[305px] md:w-[334px] h-9 flex items-center justify-center
              rounded-[30px] uppercase font-medium text-sm leading-[1.4] tracking-[0.07em] 
              text-black bg-[#00E4F0]
              hover:hover:bg-blue-500 transition-colors duration-300
